@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom range input styling */
+@layer base {
+  input[type="range"] {
+    @apply appearance-none bg-transparent;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    @apply appearance-none w-4 h-4 rounded-full bg-white cursor-pointer -mt-[6px];
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    @apply appearance-none w-4 h-4 rounded-full bg-white cursor-pointer border-0;
+  }
+  
+  input[type="range"]::-ms-thumb {
+    @apply appearance-none w-4 h-4 rounded-full bg-white cursor-pointer;
+  }
+}
